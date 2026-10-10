@@ -8,7 +8,7 @@ app.use(cors());
 app.use(express.json());
 
 // ⚠️ Replace this with your actual DeepL Free API Key
-const DEEPL_API_KEY = "8f2065e6-f52b-4561-af7d-4f4cdedbe203:fx";
+const DEEPL_API_KEY = "Put_you_key_here";
 
 app.post('/api/translate', async (req, res) => {
   const { text, sourceLang, targetLang } = req.body;
